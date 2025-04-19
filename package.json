@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service serve",
-    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service serve",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service build",
-    "lint": "set NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service lint"
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service serve",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service build",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider && node ./node_modules/@vue/cli-service/bin/vue-cli-service lint"
   },
   "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0",
+    "@capacitor/status-bar": "^6.0.2",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.0",
     "core-js": "^2.6.5",

@@ -1,0 +1,16 @@
+{
+  "appId": "com.routine.note",
+  "appName": "routine-notes",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "ios": {
+    "handleApplicationNotifications": false
+  },
+  "plugins": {
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#ffffff",
+      "overlay": false
+    }
+  }
+}
